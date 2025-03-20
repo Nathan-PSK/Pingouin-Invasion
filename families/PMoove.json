@@ -16,6 +16,13 @@
 			"desc": "",
 			"show": true,
 			"sid": 345039095727032
+		},
+		{
+			"name": "Dash",
+			"type": "boolean",
+			"desc": "",
+			"show": true,
+			"sid": 156415256397374
 		}
 	],
 	"behaviorTypes": [

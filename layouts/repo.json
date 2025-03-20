@@ -273,7 +273,8 @@
 					"tags": "",
 					"instanceVariables": {
 						"speedP": 70,
-						"Spawn": 5
+						"Spawn": 5,
+						"Dash": true
 					},
 					"behaviors": {
 						"Physics2": {

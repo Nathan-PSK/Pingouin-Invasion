@@ -1245,7 +1245,8 @@
 							}
 						}
 					],
-					"sid": 183754742047929
+					"sid": 183754742047929,
+					"disabled": true
 				},
 				{
 					"eventType": "block",
@@ -1270,7 +1271,8 @@
 							}
 						}
 					],
-					"sid": 830390771133931
+					"sid": 830390771133931,
+					"disabled": true
 				},
 				{
 					"eventType": "block",
@@ -1298,16 +1300,173 @@
 					"eventType": "block",
 					"conditions": [
 						{
-							"id": "on-collision-with-another-object",
-							"objectClass": "Halo",
-							"sid": 686324478166452,
+							"id": "every-x-seconds",
+							"objectClass": "System",
+							"sid": 355635380733475,
 							"parameters": {
-								"object": "PMoove"
+								"interval-seconds": "20"
 							}
 						}
 					],
-					"actions": [],
+					"actions": [
+						{
+							"id": "create-object",
+							"objectClass": "System",
+							"sid": 799441718019662,
+							"parameters": {
+								"object-to-create": "trouP",
+								"layer": "0",
+								"x": "random(602, 1273)",
+								"y": "random(382, 678)",
+								"create-hierarchy": true,
+								"template-name": "\"\""
+							}
+						},
+						{
+							"id": "spawn-another-object",
+							"objectClass": "trouP",
+							"sid": 409756446637412,
+							"parameters": {
+								"object": "PMoove",
+								"layer": "0",
+								"image-point": "0",
+								"create-hierarchy": false,
+								"template-name": "\"\""
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 941438869860649,
+							"parameters": {
+								"seconds": "2",
+								"use-timescale": true
+							}
+						},
+						{
+							"id": "spawn-another-object",
+							"objectClass": "trouP",
+							"sid": 225997741061219,
+							"parameters": {
+								"object": "Trou",
+								"layer": "0",
+								"image-point": "0",
+								"create-hierarchy": false,
+								"template-name": "\"\""
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "trouP",
+							"sid": 557339638854600,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						}
+					],
+					"sid": 744106997983051
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "Halo",
+							"sid": 706480629311103,
+							"parameters": {
+								"object": "PMoove"
+							}
+						},
+						{
+							"id": "is-boolean-instance-variable-set",
+							"objectClass": "PMoove",
+							"sid": 945060764548830,
+							"parameters": {
+								"instance-variable": "Dash"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-boolean-instvar",
+							"objectClass": "PMoove",
+							"sid": 322277845237114,
+							"parameters": {
+								"instance-variable": "Dash",
+								"value": "false"
+							}
+						},
+						{
+							"id": "set-speed",
+							"objectClass": "PMoove",
+							"sid": 926690445606111,
+							"behaviorType": "Bullet",
+							"parameters": {
+								"speed": "0"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 109339428832699,
+							"parameters": {
+								"seconds": "1.0",
+								"use-timescale": true
+							}
+						},
+						{
+							"id": "set-speed",
+							"objectClass": "PMoove",
+							"sid": 503751230236468,
+							"behaviorType": "Bullet",
+							"parameters": {
+								"speed": "200"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 495514694308095,
+							"parameters": {
+								"seconds": "1.0",
+								"use-timescale": true
+							}
+						},
+						{
+							"id": "set-speed",
+							"objectClass": "PMoove",
+							"sid": 971701088910599,
+							"behaviorType": "Bullet",
+							"parameters": {
+								"speed": "70"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 495856128201820,
+							"parameters": {
+								"seconds": "1.0",
+								"use-timescale": true
+							}
+						},
+						{
+							"id": "set-boolean-instvar",
+							"objectClass": "PMoove",
+							"sid": 285578400968415,
+							"parameters": {
+								"instance-variable": "Dash",
+								"value": "true"
+							}
+						}
+					],
 					"sid": 612575159927979
+				},
+				{
+					"eventType": "block",
+					"conditions": [],
+					"actions": [],
+					"sid": 340303860335886
 				}
 			],
 			"sid": 733534004273124
@@ -1402,76 +1561,6 @@
 						}
 					],
 					"sid": 976556927031075
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "every-x-seconds",
-							"objectClass": "System",
-							"sid": 666878264608008,
-							"parameters": {
-								"interval-seconds": "20"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "create-object",
-							"objectClass": "System",
-							"sid": 996045903638697,
-							"parameters": {
-								"object-to-create": "trouP",
-								"layer": "0",
-								"x": "random(602, 1273)",
-								"y": "random(382, 678)",
-								"create-hierarchy": true,
-								"template-name": "\"\""
-							}
-						},
-						{
-							"id": "spawn-another-object",
-							"objectClass": "trouP",
-							"sid": 905194924860839,
-							"parameters": {
-								"object": "PMoove",
-								"layer": "0",
-								"image-point": "0",
-								"create-hierarchy": false,
-								"template-name": "\"\""
-							}
-						},
-						{
-							"id": "wait",
-							"objectClass": "System",
-							"sid": 324357758861787,
-							"parameters": {
-								"seconds": "2",
-								"use-timescale": true
-							}
-						},
-						{
-							"id": "spawn-another-object",
-							"objectClass": "trouP",
-							"sid": 901261521518289,
-							"parameters": {
-								"object": "Trou",
-								"layer": "0",
-								"image-point": "0",
-								"create-hierarchy": false,
-								"template-name": "\"\""
-							}
-						},
-						{
-							"id": "set-visible",
-							"objectClass": "trouP",
-							"sid": 989746018923283,
-							"parameters": {
-								"visibility": "invisible"
-							}
-						}
-					],
-					"sid": 658158249171938
 				}
 			],
 			"sid": 744780665478317
