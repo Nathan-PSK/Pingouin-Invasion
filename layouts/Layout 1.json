@@ -263,7 +263,7 @@
 								"density": 200,
 								"friction": 0.01,
 								"elasticity": 1,
-								"linear-damping": 0.5,
+								"linear-damping": 0.001,
 								"angular-damping": 10,
 								"bullet": false,
 								"enabled": true
@@ -332,7 +332,7 @@
 								"density": 200,
 								"friction": 0.01,
 								"elasticity": 1,
-								"linear-damping": 0.5,
+								"linear-damping": 0.001,
 								"angular-damping": 10,
 								"bullet": false,
 								"enabled": true

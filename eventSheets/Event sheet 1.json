@@ -60,8 +60,7 @@
 											}
 										}
 									],
-									"sid": 554992317390469,
-									"disabled": true
+									"sid": 554992317390469
 								},
 								{
 									"eventType": "block",
@@ -378,6 +377,15 @@
 									"id": "set-position",
 									"objectClass": "Karateka",
 									"sid": 124900974554888,
+									"parameters": {
+										"x": "Kmouvement.X",
+										"y": "Kmouvement.Y"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "Halo",
+									"sid": 454583629420612,
 									"parameters": {
 										"x": "Kmouvement.X",
 										"y": "Kmouvement.Y"
@@ -1285,6 +1293,21 @@
 						}
 					],
 					"sid": 951673763711081
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "Halo",
+							"sid": 686324478166452,
+							"parameters": {
+								"object": "PMoove"
+							}
+						}
+					],
+					"actions": [],
+					"sid": 612575159927979
 				}
 			],
 			"sid": 733534004273124
