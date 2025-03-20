@@ -1,0 +1,58 @@
+{
+	"name": "Banquise2",
+	"plugin-id": "Sprite",
+	"sid": 110003113588235,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "solid",
+			"name": "Solid",
+			"sid": 314553989705604
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 6898,
+						"height": 3742,
+						"originX": 0.4979704262104958,
+						"originY": 0.5032068412613576,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 7202605,
+						"collisionPoly": {
+							"points": [
+								0.00014496955639315743,
+								0.0002672367717797969,
+								0.9998550304436068,
+								0.0002672367717797969,
+								0.9998550304436068,
+								0.9997327632282202,
+								0.00014496955639315743,
+								0.9997327632282202
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 831606735320367,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

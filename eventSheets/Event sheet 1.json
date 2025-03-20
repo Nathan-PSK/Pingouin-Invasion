@@ -1,0 +1,1489 @@
+{
+	"name": "Event sheet 1",
+	"events": [
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Player",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "group",
+					"disabled": false,
+					"title": "PM",
+					"description": "",
+					"isActiveOnStart": true,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "key-is-down",
+									"objectClass": "Keyboard",
+									"sid": 118591110597782,
+									"parameters": {
+										"key": 90
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "simulate-control",
+									"objectClass": "Kmouvement",
+									"sid": 940958118996752,
+									"behaviorType": "8Direction",
+									"parameters": {
+										"control": "up"
+									}
+								}
+							],
+							"sid": 889347622831186,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "every-tick",
+											"objectClass": "System",
+											"sid": 725020174456625
+										}
+									],
+									"actions": [
+										{
+											"id": "set-position",
+											"objectClass": "poing",
+											"sid": 349164492852884,
+											"parameters": {
+												"x": "Karateka.X ",
+												"y": "Karateka.Y - 50"
+											}
+										}
+									],
+									"sid": 554992317390469
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "every-tick",
+											"objectClass": "System",
+											"sid": 921677771925933
+										},
+										{
+											"id": "compare-instance-variable",
+											"objectClass": "Kmouvement",
+											"sid": 204081713509933,
+											"parameters": {
+												"instance-variable": "PP",
+												"comparison": 5,
+												"value": "2200"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-position",
+											"objectClass": "pied",
+											"sid": 242581887826973,
+											"parameters": {
+												"x": "Kmouvement.X ",
+												"y": "Kmouvement.Y - 40"
+											}
+										}
+									],
+									"sid": 193886844781433
+								}
+							]
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "key-is-down",
+									"objectClass": "Keyboard",
+									"sid": 956997985781209,
+									"parameters": {
+										"key": 83
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "simulate-control",
+									"objectClass": "Kmouvement",
+									"sid": 338499521889935,
+									"behaviorType": "8Direction",
+									"parameters": {
+										"control": "down"
+									}
+								}
+							],
+							"sid": 559957359311265,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "every-tick",
+											"objectClass": "System",
+											"sid": 863995797497866
+										}
+									],
+									"actions": [
+										{
+											"id": "set-position",
+											"objectClass": "poing",
+											"sid": 496327623837010,
+											"parameters": {
+												"x": "Karateka.X ",
+												"y": "Karateka.Y  + 50"
+											}
+										}
+									],
+									"sid": 844608075652981
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "every-tick",
+											"objectClass": "System",
+											"sid": 346592759074723
+										},
+										{
+											"id": "compare-instance-variable",
+											"objectClass": "Kmouvement",
+											"sid": 765481939055943,
+											"parameters": {
+												"instance-variable": "PP",
+												"comparison": 5,
+												"value": "2200"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-position",
+											"objectClass": "pied",
+											"sid": 681591510706582,
+											"parameters": {
+												"x": "Kmouvement.X ",
+												"y": "Kmouvement.Y + 40"
+											}
+										}
+									],
+									"sid": 583503495127693
+								}
+							]
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "key-is-down",
+									"objectClass": "Keyboard",
+									"sid": 685696984364760,
+									"parameters": {
+										"key": 81
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "simulate-control",
+									"objectClass": "Kmouvement",
+									"sid": 180213882261768,
+									"behaviorType": "8Direction",
+									"parameters": {
+										"control": "left"
+									}
+								}
+							],
+							"sid": 200881045111971,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "every-tick",
+											"objectClass": "System",
+											"sid": 742033508150839
+										}
+									],
+									"actions": [
+										{
+											"id": "set-position",
+											"objectClass": "poing",
+											"sid": 887485426808721,
+											"parameters": {
+												"x": "Karateka.X -40",
+												"y": "Karateka.Y + 5"
+											}
+										},
+										{
+											"id": "set-flipped",
+											"objectClass": "poing",
+											"sid": 537357583965552,
+											"parameters": {
+												"state": "flipped"
+											}
+										}
+									],
+									"sid": 271874649371875
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "every-tick",
+											"objectClass": "System",
+											"sid": 967128569359057
+										},
+										{
+											"id": "compare-instance-variable",
+											"objectClass": "Kmouvement",
+											"sid": 461416093732644,
+											"parameters": {
+												"instance-variable": "PP",
+												"comparison": 5,
+												"value": "2200"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-position",
+											"objectClass": "pied",
+											"sid": 832543296460454,
+											"parameters": {
+												"x": "Kmouvement.X -  20",
+												"y": "Kmouvement.Y + 7"
+											}
+										},
+										{
+											"id": "set-flipped",
+											"objectClass": "pied",
+											"sid": 816698542612548,
+											"parameters": {
+												"state": "flipped"
+											}
+										}
+									],
+									"sid": 915227669293492
+								}
+							]
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "key-is-down",
+									"objectClass": "Keyboard",
+									"sid": 984966874059934,
+									"parameters": {
+										"key": 68
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "simulate-control",
+									"objectClass": "Kmouvement",
+									"sid": 820374938781974,
+									"behaviorType": "8Direction",
+									"parameters": {
+										"control": "right"
+									}
+								}
+							],
+							"sid": 895417978511006,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "every-tick",
+											"objectClass": "System",
+											"sid": 844246711215050
+										}
+									],
+									"actions": [
+										{
+											"id": "set-position",
+											"objectClass": "poing",
+											"sid": 650957079704902,
+											"parameters": {
+												"x": "Karateka.X + 40",
+												"y": "Karateka.Y + 5"
+											}
+										}
+									],
+									"sid": 629873068880205
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "every-tick",
+											"objectClass": "System",
+											"sid": 352145373991681
+										},
+										{
+											"id": "compare-instance-variable",
+											"objectClass": "Kmouvement",
+											"sid": 392207699055033,
+											"parameters": {
+												"instance-variable": "PP",
+												"comparison": 5,
+												"value": "2200"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-position",
+											"objectClass": "pied",
+											"sid": 979360775801344,
+											"parameters": {
+												"x": "Kmouvement.X + 20",
+												"y": "Kmouvement.Y + 7"
+											}
+										}
+									],
+									"sid": 434366484338410
+								}
+							]
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "every-tick",
+									"objectClass": "System",
+									"sid": 809360370014440
+								}
+							],
+							"actions": [
+								{
+									"id": "set-angle",
+									"objectClass": "Karateka",
+									"sid": 329926907544483,
+									"parameters": {
+										"angle": "0"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "Karateka",
+									"sid": 124900974554888,
+									"parameters": {
+										"x": "Kmouvement.X",
+										"y": "Kmouvement.Y"
+									}
+								}
+							],
+							"sid": 169214223500669
+						}
+					],
+					"sid": 847953084327215
+				},
+				{
+					"eventType": "group",
+					"disabled": false,
+					"title": "PA",
+					"description": "",
+					"isActiveOnStart": true,
+					"children": [
+						{
+							"eventType": "group",
+							"disabled": false,
+							"title": "Poing",
+							"description": "",
+							"isActiveOnStart": true,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "is-boolean-instance-variable-set",
+											"objectClass": "Kmouvement",
+											"sid": 414383382937957,
+											"parameters": {
+												"instance-variable": "CoupPoing"
+											}
+										}
+									],
+									"actions": [],
+									"sid": 816265125941804,
+									"children": [
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "mouse-button-is-down",
+													"objectClass": "Mouse",
+													"sid": 603095359739761,
+													"parameters": {
+														"mouse-button": "left"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "set-boolean-instvar",
+													"objectClass": "Kmouvement",
+													"sid": 689688034076194,
+													"parameters": {
+														"instance-variable": "CoupPoing",
+														"value": "false"
+													}
+												},
+												{
+													"id": "spawn-another-object",
+													"objectClass": "Kmouvement",
+													"sid": 945694315136588,
+													"parameters": {
+														"object": "poing",
+														"layer": "0",
+														"image-point": "0",
+														"create-hierarchy": false,
+														"template-name": "\"\""
+													}
+												},
+												{
+													"id": "set-animation-frame",
+													"objectClass": "poing",
+													"sid": 985827340739558,
+													"parameters": {
+														"frame-number": "1"
+													}
+												},
+												{
+													"id": "wait",
+													"objectClass": "System",
+													"sid": 118396405625330,
+													"parameters": {
+														"seconds": "0.05",
+														"use-timescale": true
+													}
+												},
+												{
+													"id": "set-animation-frame",
+													"objectClass": "poing",
+													"sid": 244216974639559,
+													"parameters": {
+														"frame-number": "2"
+													}
+												},
+												{
+													"id": "wait",
+													"objectClass": "System",
+													"sid": 339352216228770,
+													"parameters": {
+														"seconds": "0.05",
+														"use-timescale": true
+													}
+												},
+												{
+													"id": "set-animation-frame",
+													"objectClass": "poing",
+													"sid": 207125118082629,
+													"parameters": {
+														"frame-number": "3"
+													}
+												},
+												{
+													"id": "wait",
+													"objectClass": "System",
+													"sid": 419252457285325,
+													"parameters": {
+														"seconds": "0.05",
+														"use-timescale": true
+													}
+												},
+												{
+													"id": "set-animation-frame",
+													"objectClass": "poing",
+													"sid": 217622620268294,
+													"parameters": {
+														"frame-number": "4"
+													}
+												},
+												{
+													"id": "wait",
+													"objectClass": "System",
+													"sid": 477194980436653,
+													"parameters": {
+														"seconds": "0.05",
+														"use-timescale": true
+													}
+												},
+												{
+													"id": "destroy",
+													"objectClass": "poing",
+													"sid": 236399736026624
+												},
+												{
+													"id": "wait",
+													"objectClass": "System",
+													"sid": 313968534598961,
+													"parameters": {
+														"seconds": "0.5",
+														"use-timescale": true
+													}
+												},
+												{
+													"id": "set-boolean-instvar",
+													"objectClass": "Kmouvement",
+													"sid": 825601103667159,
+													"parameters": {
+														"instance-variable": "CoupPoing",
+														"value": "true"
+													}
+												}
+											],
+											"sid": 397230031034215
+										}
+									]
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "on-collision-with-another-object",
+											"objectClass": "poing",
+											"sid": 689126828823649,
+											"parameters": {
+												"object": "PMoove"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "apply-impulse-at-angle",
+											"objectClass": "PMoove",
+											"sid": 211871274019977,
+											"behaviorType": "Physics2",
+											"parameters": {
+												"impulse": "800",
+												"angle": "Kmouvement.Angle",
+												"image-point": "0"
+											}
+										},
+										{
+											"id": "set-speed",
+											"objectClass": "PMoove",
+											"sid": 247200849192521,
+											"behaviorType": "Bullet",
+											"parameters": {
+												"speed": "0"
+											}
+										},
+										{
+											"id": "wait",
+											"objectClass": "System",
+											"sid": 271425190236394,
+											"parameters": {
+												"seconds": "2",
+												"use-timescale": true
+											}
+										},
+										{
+											"id": "set-speed",
+											"objectClass": "PMoove",
+											"sid": 168958183437289,
+											"behaviorType": "Bullet",
+											"parameters": {
+												"speed": "70"
+											}
+										}
+									],
+									"sid": 161100634855832
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "on-collision-with-another-object",
+											"objectClass": "poing",
+											"sid": 513172579116795,
+											"parameters": {
+												"object": "PMoove"
+											}
+										},
+										{
+											"id": "compare-instance-variable",
+											"objectClass": "Kmouvement",
+											"sid": 175910897526617,
+											"parameters": {
+												"instance-variable": "PP",
+												"comparison": 2,
+												"value": "7000"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "add-to-instvar",
+											"objectClass": "Kmouvement",
+											"sid": 715991365696079,
+											"parameters": {
+												"instance-variable": "PP",
+												"value": "200"
+											}
+										}
+									],
+									"sid": 472464369266319
+								}
+							],
+							"sid": 967234362741284
+						},
+						{
+							"eventType": "group",
+							"disabled": false,
+							"title": "Pied",
+							"description": "",
+							"isActiveOnStart": true,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "is-boolean-instance-variable-set",
+											"objectClass": "Kmouvement",
+											"sid": 242035528956628,
+											"parameters": {
+												"instance-variable": "CoupPied"
+											}
+										}
+									],
+									"actions": [],
+									"sid": 917346066185000,
+									"children": [
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "mouse-button-is-down",
+													"objectClass": "Mouse",
+													"sid": 796919688454069,
+													"parameters": {
+														"mouse-button": "right"
+													}
+												},
+												{
+													"id": "compare-instance-variable",
+													"objectClass": "Kmouvement",
+													"sid": 503497568669542,
+													"parameters": {
+														"instance-variable": "PP",
+														"comparison": 5,
+														"value": "2200"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "set-boolean-instvar",
+													"objectClass": "Kmouvement",
+													"sid": 115224210279497,
+													"parameters": {
+														"instance-variable": "CoupPied",
+														"value": "false"
+													}
+												},
+												{
+													"id": "spawn-another-object",
+													"objectClass": "Kmouvement",
+													"sid": 274051089458261,
+													"parameters": {
+														"object": "pied",
+														"layer": "0",
+														"image-point": "0",
+														"create-hierarchy": false,
+														"template-name": "\"\""
+													}
+												},
+												{
+													"id": "set-animation-frame",
+													"objectClass": "pied",
+													"sid": 524208631762460,
+													"parameters": {
+														"frame-number": "1"
+													}
+												},
+												{
+													"id": "wait",
+													"objectClass": "System",
+													"sid": 487479085074916,
+													"parameters": {
+														"seconds": "0.05",
+														"use-timescale": true
+													}
+												},
+												{
+													"id": "set-animation-frame",
+													"objectClass": "pied",
+													"sid": 715901706700992,
+													"parameters": {
+														"frame-number": "2"
+													}
+												},
+												{
+													"id": "wait",
+													"objectClass": "System",
+													"sid": 169358033187794,
+													"parameters": {
+														"seconds": "0.05",
+														"use-timescale": true
+													}
+												},
+												{
+													"id": "set-animation-frame",
+													"objectClass": "pied",
+													"sid": 946259281854786,
+													"parameters": {
+														"frame-number": "3"
+													}
+												},
+												{
+													"id": "wait",
+													"objectClass": "System",
+													"sid": 495000124406055,
+													"parameters": {
+														"seconds": "0.05",
+														"use-timescale": true
+													}
+												},
+												{
+													"id": "set-animation-frame",
+													"objectClass": "pied",
+													"sid": 739358297965874,
+													"parameters": {
+														"frame-number": "4"
+													}
+												},
+												{
+													"id": "wait",
+													"objectClass": "System",
+													"sid": 174316449887696,
+													"parameters": {
+														"seconds": "0.05",
+														"use-timescale": true
+													}
+												},
+												{
+													"id": "destroy",
+													"objectClass": "pied",
+													"sid": 438553475574331
+												},
+												{
+													"id": "wait",
+													"objectClass": "System",
+													"sid": 919256090497608,
+													"parameters": {
+														"seconds": "0.5",
+														"use-timescale": true
+													}
+												},
+												{
+													"id": "set-boolean-instvar",
+													"objectClass": "Kmouvement",
+													"sid": 569009080278594,
+													"parameters": {
+														"instance-variable": "CoupPied",
+														"value": "true"
+													}
+												}
+											],
+											"sid": 681535010644960
+										}
+									]
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "on-collision-with-another-object",
+											"objectClass": "pied",
+											"sid": 616509189209513,
+											"parameters": {
+												"object": "PMoove"
+											}
+										},
+										{
+											"id": "compare-instance-variable",
+											"objectClass": "Kmouvement",
+											"sid": 876627979066222,
+											"parameters": {
+												"instance-variable": "PP",
+												"comparison": 5,
+												"value": "2200"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-visible",
+											"objectClass": "pied",
+											"sid": 273677580304079,
+											"parameters": {
+												"visibility": "visible"
+											}
+										},
+										{
+											"id": "apply-impulse-at-angle",
+											"objectClass": "PMoove",
+											"sid": 257761542784470,
+											"behaviorType": "Physics2",
+											"parameters": {
+												"impulse": "Kmouvement.PP",
+												"angle": "Kmouvement.Angle",
+												"image-point": "0"
+											}
+										},
+										{
+											"id": "set-instvar-value",
+											"objectClass": "Kmouvement",
+											"sid": 965049762863446,
+											"parameters": {
+												"instance-variable": "PP",
+												"value": "0"
+											}
+										},
+										{
+											"id": "set-speed",
+											"objectClass": "PMoove",
+											"sid": 333005780216757,
+											"behaviorType": "Bullet",
+											"parameters": {
+												"speed": "0"
+											}
+										},
+										{
+											"id": "wait",
+											"objectClass": "System",
+											"sid": 654867283279938,
+											"parameters": {
+												"seconds": "2",
+												"use-timescale": true
+											}
+										},
+										{
+											"id": "set-speed",
+											"objectClass": "PMoove",
+											"sid": 148891316089340,
+											"behaviorType": "Bullet",
+											"parameters": {
+												"speed": "70"
+											}
+										},
+										{
+											"id": "set-visible",
+											"objectClass": "pied",
+											"sid": 612358315737127,
+											"parameters": {
+												"visibility": "invisible"
+											}
+										}
+									],
+									"sid": 209227241722279
+								}
+							],
+							"sid": 315958845100110
+						}
+					],
+					"sid": 980099580400889
+				},
+				{
+					"eventType": "group",
+					"disabled": false,
+					"title": "CP",
+					"description": "",
+					"isActiveOnStart": true,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "Kmouvement",
+									"sid": 489220374321366,
+									"parameters": {
+										"instance-variable": "PP",
+										"comparison": 2,
+										"value": "2200"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation-frame",
+									"objectClass": "Karateka",
+									"sid": 694772323994904,
+									"parameters": {
+										"frame-number": "0"
+									}
+								},
+								{
+									"id": "set-animation-frame",
+									"objectClass": "BarreDeCoup",
+									"sid": 525285616081088,
+									"parameters": {
+										"frame-number": "0"
+									}
+								}
+							],
+							"sid": 978878754011551
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "Kmouvement",
+									"sid": 138953362366804,
+									"parameters": {
+										"instance-variable": "PP",
+										"comparison": 5,
+										"value": "2200"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation-frame",
+									"objectClass": "Karateka",
+									"sid": 606906386907355,
+									"parameters": {
+										"frame-number": "1"
+									}
+								},
+								{
+									"id": "set-animation-frame",
+									"objectClass": "BarreDeCoup",
+									"sid": 660389915958839,
+									"parameters": {
+										"frame-number": "1"
+									}
+								}
+							],
+							"sid": 495431511451349
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "Kmouvement",
+									"sid": 878760989678388,
+									"parameters": {
+										"instance-variable": "PP",
+										"comparison": 5,
+										"value": "3200"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation-frame",
+									"objectClass": "Karateka",
+									"sid": 303063152978767,
+									"parameters": {
+										"frame-number": "2"
+									}
+								},
+								{
+									"id": "set-animation-frame",
+									"objectClass": "BarreDeCoup",
+									"sid": 228941970251124,
+									"parameters": {
+										"frame-number": "2"
+									}
+								}
+							],
+							"sid": 570330405655285
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "Kmouvement",
+									"sid": 318872829255419,
+									"parameters": {
+										"instance-variable": "PP",
+										"comparison": 5,
+										"value": "4200"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation-frame",
+									"objectClass": "Karateka",
+									"sid": 334125799911605,
+									"parameters": {
+										"frame-number": "3"
+									}
+								},
+								{
+									"id": "set-animation-frame",
+									"objectClass": "BarreDeCoup",
+									"sid": 828525874973601,
+									"parameters": {
+										"frame-number": "3"
+									}
+								}
+							],
+							"sid": 739191505813116
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "Kmouvement",
+									"sid": 827469744014774,
+									"parameters": {
+										"instance-variable": "PP",
+										"comparison": 5,
+										"value": "5200"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation-frame",
+									"objectClass": "Karateka",
+									"sid": 987988931525747,
+									"parameters": {
+										"frame-number": "4"
+									}
+								},
+								{
+									"id": "set-animation-frame",
+									"objectClass": "BarreDeCoup",
+									"sid": 175215633733320,
+									"parameters": {
+										"frame-number": "4"
+									}
+								}
+							],
+							"sid": 585067322643658
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "Kmouvement",
+									"sid": 193974581215868,
+									"parameters": {
+										"instance-variable": "PP",
+										"comparison": 5,
+										"value": "6200"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation-frame",
+									"objectClass": "Karateka",
+									"sid": 912925988419367,
+									"parameters": {
+										"frame-number": "5"
+									}
+								},
+								{
+									"id": "set-animation-frame",
+									"objectClass": "BarreDeCoup",
+									"sid": 530065144017660,
+									"parameters": {
+										"frame-number": "5"
+									}
+								}
+							],
+							"sid": 180054052201933
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "every-tick",
+									"objectClass": "System",
+									"sid": 386826370502022
+								}
+							],
+							"actions": [
+								{
+									"id": "set-text",
+									"objectClass": "Ceinture",
+									"sid": 301467040523284,
+									"parameters": {
+										"text": "Kmouvement.PP"
+									}
+								}
+							],
+							"sid": 604885565816967
+						}
+					],
+					"sid": 148116710647915
+				}
+			],
+			"sid": 826703092034528
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Ennemi",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "PMoove",
+							"sid": 603260602024831,
+							"parameters": {
+								"object": "Kmouvement"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-ignoring-input",
+							"objectClass": "Kmouvement",
+							"sid": 574397070755527,
+							"behaviorType": "8Direction",
+							"parameters": {
+								"input": "start-ignoring"
+							}
+						},
+						{
+							"id": "apply-impulse-at-angle",
+							"objectClass": "Kmouvement",
+							"sid": 800605796851931,
+							"behaviorType": "Physics",
+							"parameters": {
+								"impulse": "10",
+								"angle": "(PMoove.Angle)",
+								"image-point": "0"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 857320447717824,
+							"parameters": {
+								"seconds": "0.5",
+								"use-timescale": true
+							}
+						},
+						{
+							"id": "set-ignoring-input",
+							"objectClass": "Kmouvement",
+							"sid": 522691007402098,
+							"behaviorType": "8Direction",
+							"parameters": {
+								"input": "stop-ignoring"
+							}
+						}
+					],
+					"sid": 229787567052411
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "every-x-seconds",
+							"objectClass": "System",
+							"sid": 519564523896876,
+							"parameters": {
+								"interval-seconds": "PMoove.Spawn"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "create-object",
+							"objectClass": "System",
+							"sid": 755168263623282,
+							"parameters": {
+								"object-to-create": "PMoove",
+								"layer": "0",
+								"x": "random(416, 1408)",
+								"y": "random(256, 768)",
+								"create-hierarchy": false,
+								"template-name": "\"\""
+							}
+						},
+						{
+							"id": "create-object",
+							"objectClass": "System",
+							"sid": 211549232661014,
+							"disabled": true,
+							"parameters": {
+								"object-to-create": "Pingouins",
+								"layer": "0",
+								"x": "PMoove.X",
+								"y": "PMoove.Y",
+								"create-hierarchy": false,
+								"template-name": "\"\""
+							}
+						}
+					],
+					"sid": 183754742047929
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "every-x-seconds",
+							"objectClass": "System",
+							"sid": 877291613858244,
+							"parameters": {
+								"interval-seconds": "5"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "add-to-instvar",
+							"objectClass": "PMoove",
+							"sid": 595584179442252,
+							"parameters": {
+								"instance-variable": "Spawn",
+								"value": "-0.5"
+							}
+						}
+					],
+					"sid": 830390771133931
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "every-tick",
+							"objectClass": "System",
+							"sid": 556146891422943
+						}
+					],
+					"actions": [
+						{
+							"id": "set-angle-of-motion",
+							"objectClass": "PMoove",
+							"sid": 587135811440627,
+							"behaviorType": "Bullet",
+							"parameters": {
+								"angle": "angle(PMoove.X, PMoove.Y, Kmouvement.X, Kmouvement.Y) "
+							}
+						}
+					],
+					"sid": 951673763711081
+				}
+			],
+			"sid": 733534004273124
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Fin",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "Kmouvement",
+							"sid": 642741505901708,
+							"parameters": {
+								"object": "eau"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "restart-layout",
+							"objectClass": "System",
+							"sid": 848316868999959
+						}
+					],
+					"sid": 669597499345251
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "Kmouvement",
+							"sid": 823580872205510,
+							"parameters": {
+								"object": "Trou"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "restart-layout",
+							"objectClass": "System",
+							"sid": 815639599110082
+						}
+					],
+					"sid": 203330309806621
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "PMoove",
+							"sid": 503723204546622,
+							"parameters": {
+								"object": "eau"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "PMoove",
+							"sid": 328968838794487
+						}
+					],
+					"sid": 953125134383771
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "PMoove",
+							"sid": 520170591887628,
+							"parameters": {
+								"object": "Trou"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "PMoove",
+							"sid": 860150790186732
+						}
+					],
+					"sid": 976556927031075
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "every-x-seconds",
+							"objectClass": "System",
+							"sid": 666878264608008,
+							"parameters": {
+								"interval-seconds": "20"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "create-object",
+							"objectClass": "System",
+							"sid": 996045903638697,
+							"parameters": {
+								"object-to-create": "trouP",
+								"layer": "0",
+								"x": "random(602, 1273)",
+								"y": "random(382, 678)",
+								"create-hierarchy": true,
+								"template-name": "\"\""
+							}
+						},
+						{
+							"id": "spawn-another-object",
+							"objectClass": "trouP",
+							"sid": 905194924860839,
+							"parameters": {
+								"object": "PMoove",
+								"layer": "0",
+								"image-point": "0",
+								"create-hierarchy": false,
+								"template-name": "\"\""
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 324357758861787,
+							"parameters": {
+								"seconds": "2",
+								"use-timescale": true
+							}
+						},
+						{
+							"id": "spawn-another-object",
+							"objectClass": "trouP",
+							"sid": 901261521518289,
+							"parameters": {
+								"object": "Trou",
+								"layer": "0",
+								"image-point": "0",
+								"create-hierarchy": false,
+								"template-name": "\"\""
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "trouP",
+							"sid": 989746018923283,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						}
+					],
+					"sid": 658158249171938
+				}
+			],
+			"sid": 744780665478317
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Bordel",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-start-of-layout",
+							"objectClass": "System",
+							"sid": 224622363774482
+						}
+					],
+					"actions": [
+						{
+							"id": "set-world-gravity",
+							"objectClass": "PMoove",
+							"sid": 712512265729943,
+							"behaviorType": "Physics2",
+							"parameters": {
+								"gravity": "0"
+							}
+						}
+					],
+					"sid": 926451097036980
+				}
+			],
+			"sid": 534582735802455
+		}
+	],
+	"sid": 682793444595033
+}

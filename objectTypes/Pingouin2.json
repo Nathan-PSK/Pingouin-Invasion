@@ -1,0 +1,60 @@
+{
+	"name": "Pingouin2",
+	"plugin-id": "Sprite",
+	"sid": 111081772787315,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 312,
+						"height": 322,
+						"originX": 0.5160256410256411,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 6619601,
+						"collisionPoly": {
+							"points": [
+								0.2916666666666667,
+								0.003105590062111801,
+								0.7083333333333334,
+								0.003105590062111801,
+								0.9967948717948718,
+								0.593167701863354,
+								0.9967948717948718,
+								0.6863354037267081,
+								0.8365384615384616,
+								0.9968944099378882,
+								0.16346153846153846,
+								0.9968944099378882,
+								0.003205128205128205,
+								0.6863354037267081,
+								0.003205128205128205,
+								0.593167701863354
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 652212658333834,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

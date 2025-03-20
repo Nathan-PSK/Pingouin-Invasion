@@ -1,0 +1,37 @@
+{
+	"name": "PMoove",
+	"plugin-id": "Sprite",
+	"sid": 707212050662332,
+	"instanceVariables": [
+		{
+			"name": "speedP",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 770337793239914
+		},
+		{
+			"name": "Spawn",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 345039095727032
+		}
+	],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Physics",
+			"name": "Physics2",
+			"sid": 439089360521408
+		},
+		{
+			"behaviorId": "Bullet",
+			"name": "Bullet",
+			"sid": 559671249489117
+		}
+	],
+	"effectTypes": [],
+	"members": [
+		"Pmouvement"
+	]
+}

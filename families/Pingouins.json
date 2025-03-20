@@ -1,0 +1,25 @@
+{
+	"name": "Pingouins",
+	"plugin-id": "Sprite",
+	"sid": 282717663748906,
+	"instanceVariables": [
+		{
+			"name": "Speed",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 459118123503433
+		}
+	],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Physics",
+			"name": "Physics",
+			"sid": 257966306906473
+		}
+	],
+	"effectTypes": [],
+	"members": [
+		"Pingouin2"
+	]
+}
